@@ -13,16 +13,55 @@ h1, h2, h3, h4, h5 ,h6, p, small{
     color: var(--primary);
 }
 
+.nav-item a {
+    margin-left: 0px!important;
+}
+
 .hover-menu {
-    border: 2px solid black;
+    border: 2px solid var(--primary);
     position: fixed;
-    display: flex;
+    display: none;
     bottom: 20px;
     right: 20px;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #eab64b;
     border-radius: 1pc;
     z-index: 999;
+    list-style: none;
+    padding: 0px;
+}
+
+.cat-name {
+    padding: 10px;
+    text-align: start;
+    margin: 10px;
+    text-decoration: underline;
+}
+.cat-box1 {
+    width: max-content;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eab64b;
+    padding: 6px 20px;
+    border-radius: 2pc;
+    cursor: pointer;
+    border: 2px outset var(--primary);
+}
+.cat-box2 {
+    width: max-content;
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eab64b;
+    padding: 6px 20px;
+    border-radius: 2pc;
+    cursor: pointer;
+    border: 2px outset var(--primary);
+}
+.cat-link:active {
+    text-decoration: underline 2px white;
 }
 
 

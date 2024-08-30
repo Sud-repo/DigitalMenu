@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Digital Menu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon_io/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d7c7a93cf5.js" crossorigin="anonymous"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-main-color" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="">
+            <div class="py-5 bg-theme-color hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-main-color mb-3 animated slideInDown">PANDIT PARATHA GHAR</h1>
+                        <p>A SAGA OF PURITY, TASTE & HYGEINE</p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <!-- <h5 class="section-title ff-secondary text-center text-main-color fw-normal">Food Menu</h5> -->
+                    <h1 class="mb-5 border-bottom">Our Menu</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <div class="cat-box1" onclick="showCatList()" id="cat_box_open" >
+                        <i class="fa-solid fa-list" id="cat-icon-1"></i>
+                        <span>menu</span>
+                    </div>
+                    <div class="cat-box2" onclick="hideCatList()" id="cat_box_close" >
+                        <i class="fa-solid fa-xmark" id="cat-icon-2"></i>
+                        <span>close</span>
+                    </div>
+                    <ul class="justify-content-center mb-5 hover-menu" id="cat_list">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 pt-3 cat-link" href="#tab-1">
+                                <div class="ps-3">
+                                    <!-- <small class="text-body">Chats</small> -->
+                                    <h6 class="mt-n1 mb-0">Chats</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3 cat-link" href="#tab-2">
+                                <div class="ps-3">
+                                    <!-- <small class="text-body">Special</small> -->
+                                    <h6 class="mt-n1 mb-0">Paratha</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3 cat-link" href="#tab-3">
+                                <div class="ps-3">
+                                    <!-- <small class="text-body">Lovely</small> -->
+                                    <h6 class="mt-n1 mb-0">Sweets</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" >
+                            <div> <h2 class="cat-name">Chats</h2> </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/samosa.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>SAMOSA MASALA</span>
+                                                <span class="text-main-color">40₹</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/samosa.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PLAIN SAMOSA</span>
+                                                <span class="text-main-color">40₹</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE - 2 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/samosa.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>DAHI SAMOSA CHAT</span>
+                                                <span class="text-main-color">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">SIMPLE</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/masala puri.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>MASALA PURI</span>
+                                                <span class="text-main-color">₹35</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE 4 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pani puri -2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PANI PURI</span>
+                                                <span class="text-main-color">₹35</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE 5 PSC</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pani-puri.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>DHAHI PURI</span>
+                                                <span class="text-main-color">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE 5 PSC</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Kachori-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>KACHORI MASALA</span>
+                                                <span class="text-main-color">₹40</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Kachori-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>DAHI KACHORI</span>
+                                                <span class="text-main-color">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Kachori-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PLAIN KACHORI</span>
+                                                <span class="text-main-color">₹50</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE - 2 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Cutlet-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PLAIN CUTLET</span>
+                                                <span class="text-main-color">₹50</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE - 2 PCS </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Cutlet-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>MASALA CUTLET</span>
+                                                <span class="text-main-color">₹40</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2">
+                            <div class="row g-4">
+                                <div> <h2 class="cat-name">Paratha </h2> </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/paratha-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ALOO PARATHA</span>
+                                                <span class="text-main-color">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">2 PCS WITH SABZI & CHUTNEY</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/paratha-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PANEER PARATHA</span>
+                                                <span class="text-main-color">₹80</span>
+                                            </h5>
+                                            <small class="fst-italic">2 PCS WITH SABZI & CHUTNEY</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/paratha-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>GOBI PARATHA</span>
+                                                <span class="text-main-color">₹70</span>
+                                            </h5>
+                                            <small class="fst-italic">2PCS WITH SABZI & CHUTNEY</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/paratha-2.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>PUNJABI PLAIN PARATHA</span>
+                                                <span class="text-main-color">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">2 PCS WITH SABZI & CHUTNEY</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Extra-sabzi.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>EXTRA SABZI</span>
+                                                <span class="text-main-color">₹25</span>
+                                            </h5>
+                                            <small class="fst-italic">1 CUP</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/masala-curd.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>MASALA CURD</span>
+                                                <span class="text-main-color">₹10</span>
+                                            </h5>
+                                            <small class="fst-italic">1 CUP</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3">
+                            <div> <h2 class="cat-name">Sweets</h2> </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Gulab jamun.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>GULAB JAMUN</span>
+                                                <span class="text-main-color">₹30</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE - 2 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Rasgulla.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>RASGULLA</span>
+                                                <span class="text-main-color">₹30</span>
+                                            </h5>
+                                            <small class="fst-italic">1 PLATE - 2 PCS</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-theme-color footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-5" style="justify-content: space-evenly;">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-main-color text-decoration-underline fw-normal mb-4">Opening</h4>
+                        <h5 class="fw-normal">Monday - Sunday</h5>
+                        <p>5 PM - 9 PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-main-color text-decoration-underline fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>K.R Pura, Dooravani Nagar, Bengaluru, Karnataka 560016</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9341662375</p>
+                        <!-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
+                        <!-- <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="ff-secondary text-main-color fw-normal mb-4" style="text-align: center;font-size: 3rem;">Thank You For Visiting</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        function showCatList() {
+            const catBox1 = document.getElementById('cat_box_open');
+            const catBox2 = document.getElementById('cat_box_close');
+            const catList = document.getElementById('cat_list');
+            
+            catList.style.display='flex';
+            catBox1.style.display='none';
+            catBox2.style.display='block';
+        }
+        function hideCatList() {
+            const catBox1 = document.getElementById('cat_box_open');
+            const catBox2 = document.getElementById('cat_box_close');
+            const catList = document.getElementById('cat_list');
+            
+            catList.style.display='none';
+            catBox1.style.display='block';
+            catBox2.style.display='none';
+        }
+    </script>
+
+</body>
+
+</html>
