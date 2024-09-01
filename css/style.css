@@ -14,23 +14,34 @@ h1, h2, h3, h4, h5 ,h6, p, small, span{
     color: var(--primary);
 }
 
+.body-bg {
+    background-color: var(--bg-color);
+}
+
+hr {
+    color: var(--primary)!important;
+}
+
 .quote {
     position: absolute;
     top: 5px;
-    left: 11pc;
+    left: 45%;
     font-size: 13px;
     color: var(--primary);
+}
+.quote p {
+    margin: 0px;
 }
 .note {
     padding: 15px;
     margin: 0px 20px;
-    border: 5px dashed var(--bg-color);
+    border: 5px dashed var(--primary);
 }
 
 .note p {
     color: #0200b3; 
     text-transform: uppercase;
-    padding: 0px 18px;
+    padding-left: 18px;
 }
 
 .nav-item a {
