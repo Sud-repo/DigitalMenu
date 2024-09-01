@@ -3,6 +3,7 @@
     --primary: #cc4935;
     --light: #F1F8FF;
     --dark: #0F172B;
+    --bg-color: #e3e400;
 }
 
 html , body {
@@ -11,6 +12,25 @@ html , body {
 
 h1, h2, h3, h4, h5 ,h6, p, small, span{
     color: var(--primary);
+}
+
+.quote {
+    position: absolute;
+    top: 5px;
+    left: 11pc;
+    font-size: 13px;
+    color: var(--primary);
+}
+.note {
+    padding: 15px;
+    margin: 0px 20px;
+    border: 5px dashed var(--bg-color);
+}
+
+.note p {
+    color: #0200b3; 
+    text-transform: uppercase;
+    padding: 0px 18px;
 }
 
 .nav-item a {
@@ -24,7 +44,7 @@ h1, h2, h3, h4, h5 ,h6, p, small, span{
     bottom: 20px;
     right: 20px;
     flex-direction: column;
-    background-color: #eab64b;
+    background-color: var(--bg-color);
     border-radius: 1pc;
     z-index: 999;
     list-style: none;
@@ -42,7 +62,7 @@ h1, h2, h3, h4, h5 ,h6, p, small, span{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #eab64b;
+    background-color: var(--bg-color);
     padding: 6px 20px;
     border-radius: 2pc;
     cursor: pointer;
@@ -54,7 +74,7 @@ h1, h2, h3, h4, h5 ,h6, p, small, span{
     display: none;
     bottom: 20px;
     right: 20px;
-    background-color: #eab64b;
+    background-color: var(--bg-color);
     padding: 6px 20px;
     border-radius: 2pc;
     cursor: pointer;
@@ -69,7 +89,7 @@ h1, h2, h3, h4, h5 ,h6, p, small, span{
     color: var(--primary);
 }
 .bg-theme-color{
-    background-color: #eab64b;
+    background-color: var(--bg-color);
     color: black;
 }
 .ff-secondary {
