@@ -3,24 +3,20 @@
     --primary: #cc4935;
     --light: #F1F8FF;
     --dark: #0F172B;
-    --bg-color: #e3e400;
+    --bg-color: #e4c44b;
 }
 
 html , body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5 ,h6, p, small, span{
+/* h1, h2, h3, h4, h5 ,h6, p, small, span{
     color: var(--primary);
-}
+} */
 
-.body-bg {
+/* .body-bg {
     background-color: var(--bg-color);
-}
-
-hr {
-    color: var(--primary)!important;
-}
+} */
 
 .quote {
     position: absolute;
